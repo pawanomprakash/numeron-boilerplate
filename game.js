@@ -16,43 +16,44 @@ let score=0
 
 
 greaterthan.onclick=()=>{
-    if(number1>number2){
+    if(randomnumber1>randomnumber2){
         score++;
-    resettime(timerid)}
+        resettime(timerid)}
     else{
         location.href="gameover.html"
     }
-    number1=Math.round(Math.random()*100);
-    number1.box.innerHTML=number1;
-    number2=Math.round(Math.random()*100);
-    number1.box.innerHTML=number1;
+    randomnumber1=Math.round(Math.random()*100);
+    number1.innerHTML=randomnumber1;
+    randomnumber2=Math.round(Math.random()*100);
+    number2.innerHTML=randomnumber2;
 }
 
 equalsto.onclick=()=>{
-    if(number1==number2){
+    if(randomnumber1==randomnumber2){
         score++;
     resettime(timerid)}
     else{
         location.href="gameover.html"
     }
-    number1=Math.round(Math.random()*100);
-    number1.box.innerHTML=number1;
-    number2=Math.round(Math.random()*100);
-    number1.box.innerHTML=number1;
+    randomnumber1=Math.round(Math.random()*100);
+    number1.innerHTML=randomnumber1;
+    randomnumber2=Math.round(Math.random()*100);
+    number2.innerHTML=randomnumber2;
 }
 
 lesserthan.onclick=()=>{
-    if(number1<number2){
+    if(randomnumber1<randomnumber2){
         score++;
     resettime(timerid)}
     else{
         location.href="gameover.html"
     }
-    number1=Math.round(Math.random()*100);
-    number1.box.innerHTML=number1;
-    number2=Math.round(Math.random()*100);
-    number1.box.innerHTML=number1;
+    randomnumber1=Math.round(Math.random()*100);
+    number1.innerHTML=randomnumber1;
+    randomnumber2=Math.round(Math.random()*100);
+    number2.innerHTML=randomnumber2;
 }
+
 // Iteration 4: Build a timer for the game
 var time=5
 var  timer=document.getElementById("timer");
